@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,600;1,600;1,700&display=swap');
+
+.nav-title {
+    padding-left: 1em;
+    font-size: 1.75em;
+    font-family: 'Exo', sans-serif;
+}
+
+.nav-button {
+    padding-left: .75em;
+}
+
+.navbar-color {
+    background-color: #ffffff;
+}

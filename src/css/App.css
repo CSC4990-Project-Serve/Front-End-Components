@@ -1,0 +1,12 @@
+body {
+    background-color:  #252525;
+    color: #FFFFFF;
+}
+.container {
+    padding-bottom: 75px;
+}
+
+.restaurant-cards {
+    color: black;
+    margin-right: 2.5rem;
+}
