@@ -6,7 +6,7 @@ import '../css/NavigationBar.css'
 const NavigationBar = () => {
     return (
         <>
-            <Navbar className="navbar-color" expand="lg">
+            <Navbar sticky="top" className="navbar-color" expand="lg">
                 <Container fluid>
                     <Navbar.Brand href="#home">
                         <img

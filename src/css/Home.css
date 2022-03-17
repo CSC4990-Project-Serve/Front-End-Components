@@ -1,0 +1,43 @@
+body {
+    background-color:  #252525;
+    color: #FFFFFF;
+}
+.container {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* 'Card' component styling */
+.restaurant-cards {
+    background-color: #000000;
+    margin-right: 2.5rem;
+}
+
+.restaurant-cards:last-child {
+    margin-right: 0;
+}
+
+/* 'Card' img styling */
+.restaurant-cards-img {
+    opacity: 0.9;
+}
+
+.card-body {
+    background-color:#FFFFFF;
+    color: black;
+}
+
+.card-subtitle {
+    margin-top: -0.4rem;
+    margin-bottom: 0.4rem;
+}
+
+/* 'Carousel' img styling */
+.d-block {
+    opacity: 0.75;
+}
+
+h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
