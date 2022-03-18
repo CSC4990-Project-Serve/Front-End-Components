@@ -5,49 +5,47 @@ import Footer from "./Footer";
 import HorizontalLine from "./HorizontalLine";
 import '../css/Home.css';
 import carousel01 from '../imgs/carousel-overhead.jpg';
-import carousel02 from '../imgs/carousel-indoor.jpg';
-import carousel03 from '../imgs/carousel-outdoor.jpg';
+import carousel02 from '../imgs/carousel-outdoor.jpg';
+import carousel03 from '../imgs/carousel-indoor.jpg';
+import carousel04 from '../imgs/carousel-food.jpg';
+import carousel05 from '../imgs/carousel-eating.jpg';
 import dummy_image from '../imgs/dummy-restaurant.jpg';
 
 const Home = () => {
     return (
         <>
-            {/* TODO: Find a color scheme */}
-
-
-
             {/* TODO: Clean up Navbar */}
             <NavigationBar />
 
+            {/* TODO: Add Search Bar into Carousel */}
             {/* Container for Carousel Images */}
-            {/* TODO: Style image container, add opacity... make sure all images are the same resolution */}
             <Container>
                 <Carousel>
-                    <Carousel.Item interval={3000}>
+                    <Carousel.Item interval={5000}>
                         <img
                             className="d-block w-100"
                             src={carousel01}
                             height="650"
-                            alt="Outdoor Dining"
+                            alt="Overhead of Restaurant"
                         />
                         <Carousel.Caption>
-                            <h3>First slide label</h3>
+                            <h3>Slide Label</h3>
                             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                         </Carousel.Caption>
                     </Carousel.Item>
-                    <Carousel.Item interval={3000}>
+                    <Carousel.Item interval={5000}>
                         <img
                             className="d-block w-100"
                             src={carousel02}
                             height="650"
-                            alt="Indoor Dining"
+                            alt="Two people dining outside."
                         />
                         <Carousel.Caption>
-                            <h3>Second slide label</h3>
+                            <h3>Slide Label</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </Carousel.Caption>
                     </Carousel.Item>
-                    <Carousel.Item interval={3000}>
+                    <Carousel.Item interval={5000}>
                         <img
                             className="d-block w-100"
                             src={carousel03}
@@ -55,8 +53,32 @@ const Home = () => {
                             alt="Outdoor Dining"
                         />
                         <Carousel.Caption>
-                            <h3>Third slide label</h3>
-                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                            <h3>Slide Label</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item interval={5000}>
+                        <img
+                            className="d-block w-100"
+                            src={carousel04}
+                            height="650"
+                            alt="Outdoor Dining"
+                        />
+                        <Carousel.Caption>
+                            <h3>Slide Label</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item interval={5000}>
+                        <img
+                            className="d-block w-100"
+                            src={carousel05}
+                            height="650"
+                            alt="Outdoor Dining"
+                        />
+                        <Carousel.Caption>
+                            <h3>Slide Label</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>
@@ -64,55 +86,52 @@ const Home = () => {
 
             <HorizontalLine />
 
-            {/* TODO: Add hover effect on cards */}
-            {/* Notes: Can't edit rounded edges due to bootstrap, tried overriding, but it came out horrible */}
-
             {/* Container for Cards */}
             <Container>
                 <h2>Featured Restaurants</h2>
                 <CardGroup>
-                    <Card className="restaurant-cards" >
+                    <Card className="restaurant-cards " style={{ border: '1px solid white' }}>
                         <Card.Img variant="top" className="restaurant-cards-img" src={dummy_image} />
                         <Card.Body>
-                            <Card.Title>El Tizon Taqueria</Card.Title>
-                            <Card.Subtitle>Aurora, IL</Card.Subtitle>
+                            <Card.Title>Restaurant Name</Card.Title>
+                            <Card.Subtitle>City, State</Card.Subtitle>
                             <Card.Text>
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus magnam repellendus saepe.
                             </Card.Text>
-                            <Button variant="primary">Reserve Now</Button>
+                            <Button variant="dark">Reserve Now</Button>
                         </Card.Body>
                     </Card>
-                    <Card className="restaurant-cards" >
+                    <Card className="restaurant-cards" style={{ border: '1px solid white' }}>
                         <Card.Img variant="top" className="restaurant-cards-img" src={dummy_image} />
                         <Card.Body>
-                            <Card.Title>El Tizon Taqueria</Card.Title>
-                            <Card.Subtitle>Aurora, IL</Card.Subtitle>
+                            <Card.Title>Restaurant Name</Card.Title>
+                            <Card.Subtitle>City, State</Card.Subtitle>
                             <Card.Text>
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus magnam repellendus saepe.
                             </Card.Text>
-                            <Button variant="primary">Reserve Now</Button>
+                            <Button variant="dark">Reserve Now</Button>
                         </Card.Body>
                     </Card>
-                    <Card className="restaurant-cards" >
+                    <Card className="restaurant-cards" style={{ border: '1px solid white' }}>
                         <Card.Img variant="top" className="restaurant-cards-img" src={dummy_image} />
                         <Card.Body>
-                            <Card.Title>El Tizon Taqueria</Card.Title>
-                            <Card.Subtitle>Aurora, IL</Card.Subtitle>
+                            <Card.Title>Restaurant Name</Card.Title>
+                            <Card.Subtitle>City, State</Card.Subtitle>
                             <Card.Text>
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus magnam repellendus saepe.
                             </Card.Text>
-                            <Button variant="primary">Reserve Now</Button>
+                            <Button variant="dark">Reserve Now</Button>
                         </Card.Body>
                     </Card>
-                    <Card className="restaurant-cards" >
+                    <Card className="restaurant-cards" style={{ border: '1px solid white' }}>
                         <Card.Img variant="top" className="restaurant-cards-img" src={dummy_image} />
                         <Card.Body>
-                            <Card.Title>El Tizon Taqueria</Card.Title>
-                            <Card.Subtitle>Aurora, IL</Card.Subtitle>
+                            <Card.Title>Restaurant Name</Card.Title>
+                            <Card.Subtitle>City, State</Card.Subtitle>
                             <Card.Text>
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus magnam repellendus saepe.
                             </Card.Text>
-                            <Button variant="primary">Reserve Now</Button>
+                            <Button variant="dark">Reserve Now</Button>
                         </Card.Body>
                     </Card>
                 </CardGroup>
@@ -120,48 +139,48 @@ const Home = () => {
 
                 <h2>Trending Restaurants</h2>
                 <CardGroup>
-                    <Card className="restaurant-cards" >
+                    <Card className="restaurant-cards" style={{ border: '1px solid white' }}>
                         <Card.Img variant="top" className="restaurant-cards-img" src={dummy_image} />
                         <Card.Body>
-                            <Card.Title>El Tizon Taqueria</Card.Title>
-                            <Card.Subtitle>Aurora, IL</Card.Subtitle>
+                            <Card.Title>Restaurant Name</Card.Title>
+                            <Card.Subtitle>City, State</Card.Subtitle>
                             <Card.Text>
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus magnam repellendus saepe.
                             </Card.Text>
-                            <Button variant="primary">Reserve Now</Button>
+                            <Button variant="dark">Reserve Now</Button>
                         </Card.Body>
                     </Card>
-                    <Card className="restaurant-cards" >
+                    <Card className="restaurant-cards" style={{ border: '1px solid white' }}>
                         <Card.Img variant="top" className="restaurant-cards-img" src={dummy_image} />
                         <Card.Body>
-                            <Card.Title>El Tizon Taqueria</Card.Title>
-                            <Card.Subtitle>Aurora, IL</Card.Subtitle>
+                            <Card.Title>Restaurant Name</Card.Title>
+                            <Card.Subtitle>City, State</Card.Subtitle>
                             <Card.Text>
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus magnam repellendus saepe.
                             </Card.Text>
-                            <Button variant="primary">Reserve Now</Button>
+                            <Button variant="dark">Reserve Now</Button>
                         </Card.Body>
                     </Card>
-                    <Card className="restaurant-cards" >
+                    <Card className="restaurant-cards" style={{ border: '1px solid white' }}>
                         <Card.Img variant="top" className="restaurant-cards-img" src={dummy_image} />
                         <Card.Body>
-                            <Card.Title>El Tizon Taqueria</Card.Title>
-                            <Card.Subtitle>Aurora, IL</Card.Subtitle>
+                            <Card.Title>Restaurant Name</Card.Title>
+                            <Card.Subtitle>City, State</Card.Subtitle>
                             <Card.Text>
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus magnam repellendus saepe.
                             </Card.Text>
-                            <Button variant="primary">Reserve Now</Button>
+                            <Button variant="dark">Reserve Now</Button>
                         </Card.Body>
                     </Card>
-                    <Card className="restaurant-cards" >
+                    <Card className="restaurant-cards" style={{ border: '1px solid white' }}>
                         <Card.Img variant="top" className="restaurant-cards-img" src={dummy_image} />
                         <Card.Body>
-                            <Card.Title>El Tizon Taqueria</Card.Title>
-                            <Card.Subtitle>Aurora, IL</Card.Subtitle>
+                            <Card.Title>Restaurant Name</Card.Title>
+                            <Card.Subtitle>City, State</Card.Subtitle>
                             <Card.Text>
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus magnam repellendus saepe.
                             </Card.Text>
-                            <Button variant="primary">Reserve Now</Button>
+                            <Button variant="dark">Reserve Now</Button>
                         </Card.Body>
                     </Card>
                 </CardGroup>

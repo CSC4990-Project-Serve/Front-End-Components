@@ -1,5 +1,5 @@
 body {
-    background-color:  #252525;
+    background-color:  #141414;
     color: #FFFFFF;
 }
 .container {
@@ -7,24 +7,28 @@ body {
     margin-bottom: 2rem;
 }
 
+.container:last-of-type {
+    margin-bottom: 4rem;
+}
+
 /* 'Card' component styling */
 .restaurant-cards {
     background-color: #000000;
     margin-right: 2.5rem;
+    transition: all 0.3s;
+}
+
+.restaurant-cards:hover {
+    transform: scale(1.05);
 }
 
 .restaurant-cards:last-child {
     margin-right: 0;
 }
 
-/* 'Card' img styling */
-.restaurant-cards-img {
-    opacity: 0.9;
-}
-
 .card-body {
-    background-color:#FFFFFF;
-    color: black;
+    background-color:#000000;
+    color: white;
 }
 
 .card-subtitle {
@@ -32,9 +36,16 @@ body {
     margin-bottom: 0.4rem;
 }
 
+/* 'Card' img styling */
+.restaurant-cards-img {
+    opacity: 0.9;
+}
+
+
+
 /* 'Carousel' img styling */
 .d-block {
-    opacity: 0.75;
+    opacity: 0.85;
 }
 
 h2 {
