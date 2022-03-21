@@ -5,11 +5,12 @@ const HorizontalLine = () => {
         <>
             <hr
                 style={{
-                    backgroundColor: 'white',
-                    height: 2.5,
-                    width: '80%',
+                    backgroundColor: '#464649',
+                    height: 1,
+                    width: '75%',
                     marginLeft: 'auto',
-                    marginRight: 'auto'
+                    marginRight: 'auto',
+                    opacity: 1
                 }}
             />
         </>

@@ -34,10 +34,10 @@ const NavigationBar = () => {
                                 <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
                             </NavDropdown>
                             <Nav.Item className="nav-button">
-                                <Button variant="outline-success" style={{width: '80px'}}>Log in</Button>
+                                <Button variant="outline-success">Sign in</Button>
                             </Nav.Item>
                             <Nav.Item className="nav-button">
-                                <Button variant="primary" style={{width: '80px'}}>Sign up</Button>
+                                <Button variant="primary">Sign up</Button>
                             </Nav.Item>
                         </Nav>
                     </Navbar.Collapse>

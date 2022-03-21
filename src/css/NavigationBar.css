@@ -4,16 +4,17 @@
     background-color: #FFFAFA;
 }
 .navbar-container {
-    margin-left: 5rem;
-    margin-right: 5rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
 }
 .nav-title {
-    margin-left: 1em;
+    margin-left: 1.5rem;
     font-size: 1.75em;
     font-family: 'Exo', sans-serif;
 }
 .nav-button {
-    margin-left: 1em;
+    width: 80px;
+    margin-left: .75rem;
 }
 .dropdown-toggle {
     color: #000000;
@@ -31,7 +32,7 @@
     }
     .nav-title {
         margin-left: 0;
-        font-size: 1.5em;
+        font-size: 1.5rem;
     }
 }
 
