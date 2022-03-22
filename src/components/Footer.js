@@ -5,22 +5,35 @@ import '../css/Footer.css'
 
 const Footer = () => {
     return (
-        //TODO: Left off making custom styling to footer
         <>
             <footer className="footer-distributed">
 
                 <div className="footer-left">
 
-                    <h3>Project<span>Serve</span></h3>
+                    <div className="company-about">
+                        <div className="company-about-header">About Us</div>
+                        <div className="company-about-info">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci distinctio eius eligendi, fugit illo inventore ipsam labore laudantium, minima placeat quidem veniam! Culpa dolore ex, in maiores nostrum ullam ut.
+                        </div>
 
-                    <p className="footer-company-name">Coding Connoisseurs &copy;2022</p>
+                    </div>
+
+                    <div className="footer-icons">
+
+                        <a href="#"><MDBIcon fab icon='facebook-f' /></a>
+                        <a href="#"><MDBIcon fab icon='twitter' /></a>
+                        <a href="#"><MDBIcon fab icon='google' /></a>
+                        <a href="#"><MDBIcon fab icon='instagram' /></a>
+
+                    </div>
+
                 </div>
 
                 <div className="footer-center">
 
+                    <div className="link-header">Useful Links</div>
 
-                    <p className="footer-links">
-                        <span>Useful Links</span>
+                    <div className="footer-links">
                         <div>
                             <a href="#">Contact Us</a>
                         </div>
@@ -33,26 +46,15 @@ const Footer = () => {
                         <div>
                             <a href="#">Privacy Policy</a>
                         </div>
-                    </p>
+                    </div>
 
                 </div>
 
                 <div className="footer-right">
 
-                    <p className="footer-company-about">
-                        <span>About Us</span>
-                        Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu
-                        auctor lacus vehicula sit amet.
-                    </p>
+                    <h3>Project <span>Serve</span></h3>
 
-                    <div className="footer-icons">
-
-                        <a href="#"><MDBIcon fab icon='facebook-f' /></a>
-                        <a href="#"><MDBIcon fab icon='twitter' /></a>
-                        <a href="#"><MDBIcon fab icon='google' /></a>
-                        <a href="#"><MDBIcon fab icon='instagram' /></a>
-
-                    </div>
+                    <p className="footer-company-name">Coding Connoisseurs &copy;2022</p>
 
                 </div>
 

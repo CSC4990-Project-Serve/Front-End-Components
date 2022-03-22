@@ -1,9 +1,11 @@
 import React from "react";
-import {Button, Card, CardGroup, Carousel, Container} from "react-bootstrap";
 import NavigationBar from "./NavigationBar";
 import Footer from "./Footer";
 import HorizontalLine from "./HorizontalLine";
 import ShowMore from "./ShowMore";
+import {Button, Card, CardGroup, Carousel, Container} from "react-bootstrap";
+import {MDBIcon} from "mdb-react-ui-kit";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 import '../css/Home.css';
 import carousel01 from '../imgs/carousel-overhead.jpg';
 import carousel02 from '../imgs/carousel-outdoor.jpg';
@@ -17,21 +19,16 @@ const Home = () => {
         <>
             <NavigationBar />
 
-            {/* TODO: Add Search Bar into Carousel */}
             {/* Container for Carousel Images */}
             <Container>
                 <Carousel>
                     <Carousel.Item interval={5000}>
                         <img
                             className="d-block w-100"
-                            src={carousel01}
+                            src={carousel02}
                             height="650"
                             alt="Overhead of Restaurant"
                         />
-                        <Carousel.Caption>
-                            <h3>Slide Label</h3>
-                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                        </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item interval={5000}>
                         <img
@@ -40,53 +37,46 @@ const Home = () => {
                             height="650"
                             alt="Two people dining outside."
                         />
-                        <Carousel.Caption>
-                            <h3>Slide Label</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item interval={5000}>
                         <img
                             className="d-block w-100"
-                            src={carousel03}
+                            src={carousel02}
                             height="650"
                             alt="Indoor Dining"
                         />
-                        <Carousel.Caption>
-                            <h3>Slide Label</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item interval={5000}>
                         <img
                             className="d-block w-100"
-                            src={carousel04}
+                            src={carousel02}
                             height="650"
                             alt="Food from a Restaurant"
                         />
-                        <Carousel.Caption>
-                            <h3>Slide Label</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item interval={5000}>
                         <img
                             className="d-block w-100"
-                            src={carousel05}
+                            src={carousel02}
                             height="650"
                             alt="Woman eating food"
                         />
-                        <Carousel.Caption>
-                            <h3>Slide Label</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>
+
+                <div className="carousel-search-section">
+                    <div className="carousel-header">Find a meal for every occasion.</div>
+
+                    <input type="search" className="search-bar-carousel" placeholder="Location, Restaraunt, or Cuisine"/>
+                    <button type="button" className="search-icon-carousel" >
+                        <MDBIcon fas icon="search" />
+                    </button>
+                </div>
+
             </Container>
 
             <HorizontalLine />
 
-            {/* TODO: Add view all link inside Card Group */}
             {/* Container for Cards */}
             <Container>
                 <h2>Featured Restaurants</h2>
@@ -192,8 +182,6 @@ const Home = () => {
 
             <ShowMore />
 
-
-            {/* TODO: Clean up Footer */}
             <Footer/>
         </>
     )

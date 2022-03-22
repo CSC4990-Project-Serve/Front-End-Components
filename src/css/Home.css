@@ -1,71 +1,153 @@
-/* Color Scheme: 1) #141414  2) #18181B   3) #1F1F23  4) #FFFAFA */
+@import url('https://fonts.googleapis.com/css2?family=Damion&family=Open+Sans&family=Paytone+One&family=Roboto:wght@500&display=swap');
 
 body {
-    background-color:  #141414;
+    background-color: #141414;
     color: #EFEFF1;
 }
+h2 {
+    margin: 2rem 0 1rem 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
 .container {
     margin-top: 2rem;
     margin-bottom: 1rem;
 }
-
 .container:first-of-type {
     margin-bottom: 2rem;
 }
 
 
-/* 'Card' component styling */
-.restaurant-cards {
-    background-color: #000000;
-    margin-right: 2.5rem;
-    transition: all 0.3s;
+/* Carousel Styling */
+
+.carousel-search-section {
+    position: absolute;
+    width: 80%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: -6.5rem;
+}
+.carousel-header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 3rem;
+    margin-top: -4.5rem;
+    font-family: 'Paytone One', sans-serif;
+    text-shadow:
+            -1px -1px 0 #141414,
+            1px -1px 0 #141414,
+            -1px 1px 0 #141414,
+            1px 1px 0 #141414;
+    color: #EFEFF1;
+}
+.search-bar-carousel {
+    outline: none;
     border: none;
+    background-color: #141414;
+    color: #EFEFF1;
+    width: 300px;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 10px;
+    transition: 0.1s ease-in-out;
 }
-
-.restaurant-cards:hover {
-    transform: scale(1.05);
+.search-bar-carousel:hover {
+    border: 2px solid #EFEFF1;
 }
-
-.restaurant-cards:last-child {
-    margin-right: 0;
+.search-bar-carousel:focus {
+    border: 2px solid #EFEFF1;
+    background-color: #141414;
 }
-
-.card-body {
-    background-color:#1F1F1F;
-    color: #D0CFD2;
+.search-bar-carousel::placeholder{
+    color: #EFEFF1;
+    font-family: 'Open Sans', sans-serif;
+    font-size: .85rem;
 }
-
-.card-subtitle {
-    margin-top: -0.4rem;
-    margin-bottom: 0.4rem;
-}
-
-.cards-button {
-    background-color: #3A3A3D;
-    color: #D0CFD2;
+.search-icon-carousel {
+    outline: none;
     border: none;
-    transition: 0.3s;
+    background-color: #141414;
+    color: white;
+    padding: 0.5rem 0.85rem 0.5rem 0.85rem;
+    border-radius: 10px;
+    margin-left: 0.2rem;
+    transition: 0.1s ease-in-out;
 }
-
-.cards-button:hover {
-    background-color: #464649;
-    border: none;
+.search-icon-carousel:hover {
+    border: 2px solid #EFEFF1;
+    background-color: #141414;
 }
-
-/* 'Card' img styling */
-.restaurant-cards-img {
-    opacity: 0.9;
-    max-height: 180px;
+.search-icon-carousel:focus {
+    border: 2px solid #EFEFF1;
+    background-color: #141414;
 }
-
-
-
 /* 'Carousel' img styling */
 .d-block {
     opacity: 0.85;
 }
 
-h2 {
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+
+/* 'Card' component styling */
+
+.restaurant-cards {
+    background-color: #000000;
+    border: none;
+    margin-right: 2.5rem;
+    transition: 0.5s ease-in-out;
+}
+.restaurant-cards:hover {
+    transform: scale(1.05);
+}
+.restaurant-cards:last-child {
+    margin-right: 0;
+}
+.card-title {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.25em;
+    font-weight: 600;
+}
+.card-subtitle {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1em;
+    font-weight: 600;
+    margin-top: -0.5rem;
+}
+.card-body {
+    background-color:#1F1F1F;
+    color: #D0CFD2;
+    font-family: 'Roboto Slab', serif;
+    font-size: 0.95em;
+    font-weight: 400;
+}
+.card-text {
+    margin: 1rem 0 1rem 0;
+}
+.cards-button {
+    font-family: 'Roboto', sans-serif;
+    background-color: #3A3A3D;
+    color: #D0CFD2;
+    border: none;
+    font-size: 1em;
+    transition: 0.5s ease-in-out;
+}
+.cards-button:hover {
+    background-color: #1F1F1F;
+    color: #D0CFD2;
+    border: 1px solid #D0CFD2;
+}
+.cards-button:focus {
+    background-color: #1F1F1F;
+    color: #D0CFD2;
+    border: 1px solid #D0CFD2;
+    box-shadow: none;
+}
+/* 'Card' img styling */
+.restaurant-cards-img {
+    opacity: 0.9;
+    max-height: 180px;
 }

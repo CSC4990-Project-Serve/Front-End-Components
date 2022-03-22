@@ -1,13 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 .show-more {
     overflow: hidden;
     text-align: center;
     font-size: .85rem;
+    font-family: 'Open Sans', sans-serif;
 }
-
 .show-more:last-of-type {
     margin-bottom: 4rem;
 }
-
 .show-more:before, .show-more:after {
     background-color: #464649;
     content: "";
@@ -17,7 +18,6 @@
     vertical-align: middle;
     width: 34.5%;
 }
-
 .show-more:before {
     right: 0.5rem;
     margin-left: -50%;
@@ -27,6 +27,7 @@
     left: 0.5rem;
     margin-right: -50%;
 }
+
 
 button {
     background-color: transparent;
@@ -38,16 +39,19 @@ button {
     border: 1px transparent solid;
     border-radius: 5%;
     padding: 0.4rem 0.75rem 0.4rem 0.75rem;
-    transition: 0.35s ease-in-out;
+    transition: 0.5s ease-in-out;
 }
-
 button span {
     vertical-align: top;
     text-align: center;
     padding-left: 0.5rem;
 }
-
 button:hover {
     background-color: #464649;
-    border: 1px transparent solid;
+}
+
+button:focus {
+    background-color: #464649;
+    box-shadow: none;
+    border: none;
 }
