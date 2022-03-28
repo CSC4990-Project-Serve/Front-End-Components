@@ -1,8 +1,7 @@
 import React from 'react';
 import {BrowserRouter, Routes, Route} from "react-router-dom";
-import Home from './components/Home'
-
-
+import HomePage from './components/HomePage'
+import SearchPage from "./components/SearchPage";
 
 function AppRouter() {
 
@@ -11,7 +10,8 @@ function AppRouter() {
         <div className="App">
             <BrowserRouter>
                 <Routes>
-                    <Route path="/" element={<Home />} />
+                    <Route path="/" element={<HomePage />} />
+                    <Route path="/search" element={<SearchPage />} />
                 </Routes>
             </BrowserRouter>
         </div>

@@ -1,12 +1,13 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+import {Button, Card, CardGroup, Carousel, Container} from "react-bootstrap";
+import {MDBIcon} from "mdb-react-ui-kit";
 import NavigationBar from "./NavigationBar";
 import Footer from "./Footer";
 import HorizontalLine from "./HorizontalLine";
 import ShowMore from "./ShowMore";
-import {Button, Card, CardGroup, Carousel, Container} from "react-bootstrap";
-import {MDBIcon} from "mdb-react-ui-kit";
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import '../css/Home.css';
+import '../css/HomePage.css';
 import carousel01 from '../imgs/carousel-overhead.jpg';
 import carousel02 from '../imgs/carousel-outdoor.jpg';
 import carousel03 from '../imgs/carousel-indoor.jpg';
@@ -14,7 +15,14 @@ import carousel04 from '../imgs/carousel-food.jpg';
 import carousel05 from '../imgs/carousel-eating.jpg';
 import dummy_image from '../imgs/dummy-restaurant.jpg';
 
-const Home = () => {
+const HomePage = () => {
+
+    let navigate = useNavigate();
+    const routeChange = () => {
+        let path = "/search";
+        navigate(path);
+    }
+
     return (
         <>
             <NavigationBar />
@@ -64,11 +72,12 @@ const Home = () => {
                     </Carousel.Item>
                 </Carousel>
 
+                {/* Search Button in Carousel */}
                 <div className="carousel-search-section">
                     <div className="carousel-header">Find a meal for every occasion.</div>
 
-                    <input type="search" className="search-bar-carousel" placeholder="Location, Restaraunt, or Cuisine"/>
-                    <button type="button" className="search-icon-carousel" >
+                    <input type="search" className="search-bar-carousel" placeholder="Location, Restaurant, or Cuisine"/>
+                    <button type="button" className="search-icon-carousel" onClick={routeChange}>
                         <MDBIcon fas icon="search" />
                     </button>
                 </div>
@@ -127,7 +136,6 @@ const Home = () => {
                     </Card>
                 </CardGroup>
             </Container>
-
             <ShowMore />
 
             <Container>
@@ -179,7 +187,6 @@ const Home = () => {
                     </Card>
                 </CardGroup>
             </Container>
-
             <ShowMore />
 
             <Footer/>
@@ -187,4 +194,4 @@ const Home = () => {
     )
 };
 
-export default Home;
+export default HomePage;
