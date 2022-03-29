@@ -1,11 +1,11 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import {Button, Card, CardGroup, Carousel, Container} from "react-bootstrap";
+import {Carousel, Container} from "react-bootstrap";
 import {MDBIcon} from "mdb-react-ui-kit";
+import HomeSuggestions from "./HomeSuggestions";
 import NavigationBar from "./NavigationBar";
 import Footer from "./Footer";
 import HorizontalLine from "./HorizontalLine";
-import ShowMore from "./ShowMore";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import '../css/HomePage.css';
 import carousel01 from '../imgs/carousel-overhead.jpg';
@@ -13,7 +13,6 @@ import carousel02 from '../imgs/carousel-outdoor.jpg';
 import carousel03 from '../imgs/carousel-indoor.jpg';
 import carousel04 from '../imgs/carousel-food.jpg';
 import carousel05 from '../imgs/carousel-eating.jpg';
-import dummy_image from '../imgs/dummy-restaurant.jpg';
 
 const HomePage = () => {
 
@@ -75,119 +74,19 @@ const HomePage = () => {
                 {/* Search Button in Carousel */}
                 <div className="carousel-search-section">
                     <div className="carousel-header">Find a meal for every occasion.</div>
-
                     <input type="search" className="search-bar-carousel" placeholder="Location, Restaurant, or Cuisine"/>
                     <button type="button" className="search-icon-carousel" onClick={routeChange}>
                         <MDBIcon fas icon="search" />
                     </button>
                 </div>
-
             </Container>
 
             <HorizontalLine />
 
             {/* Container for Cards */}
-            <Container>
-                <h2>Featured Restaurants</h2>
-                <CardGroup>
-                    <Card className="restaurant-cards">
-                        <Card.Img variant="top" className="restaurant-cards-img" src={dummy_image} />
-                        <Card.Body>
-                            <Card.Title>Restaurant Name</Card.Title>
-                            <Card.Subtitle>City, State</Card.Subtitle>
-                            <Card.Text>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus magnam repellendus saepe.
-                            </Card.Text>
-                            <Button className="cards-button">Reserve Now</Button>
-                        </Card.Body>
-                    </Card>
-                    <Card className="restaurant-cards">
-                        <Card.Img variant="top" className="restaurant-cards-img" src={dummy_image} />
-                        <Card.Body>
-                            <Card.Title>Restaurant Name</Card.Title>
-                            <Card.Subtitle>City, State</Card.Subtitle>
-                            <Card.Text>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus magnam repellendus saepe.
-                            </Card.Text>
-                            <Button className="cards-button">Reserve Now</Button>
-                        </Card.Body>
-                    </Card>
-                    <Card className="restaurant-cards">
-                        <Card.Img variant="top" className="restaurant-cards-img" src={dummy_image} />
-                        <Card.Body>
-                            <Card.Title>Restaurant Name</Card.Title>
-                            <Card.Subtitle>City, State</Card.Subtitle>
-                            <Card.Text>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus magnam repellendus saepe.
-                            </Card.Text>
-                            <Button className="cards-button">Reserve Now</Button>
-                        </Card.Body>
-                    </Card>
-                    <Card className="restaurant-cards">
-                        <Card.Img variant="top" className="restaurant-cards-img" src={dummy_image} />
-                        <Card.Body>
-                            <Card.Title>Restaurant Name</Card.Title>
-                            <Card.Subtitle>City, State</Card.Subtitle>
-                            <Card.Text>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus magnam repellendus saepe.
-                            </Card.Text>
-                            <Button className="cards-button">Reserve Now</Button>
-                        </Card.Body>
-                    </Card>
-                </CardGroup>
-            </Container>
-            <ShowMore />
-
-            <Container>
-                <h2>Trending Restaurants</h2>
-                <CardGroup>
-                    <Card className="restaurant-cards">
-                        <Card.Img variant="top" className="restaurant-cards-img" src={dummy_image} />
-                        <Card.Body>
-                            <Card.Title>Restaurant Name</Card.Title>
-                            <Card.Subtitle>City, State</Card.Subtitle>
-                            <Card.Text>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus magnam repellendus saepe.
-                            </Card.Text>
-                            <Button className="cards-button">Reserve Now</Button>
-                        </Card.Body>
-                    </Card>
-                    <Card className="restaurant-cards">
-                        <Card.Img variant="top" className="restaurant-cards-img" src={dummy_image} />
-                        <Card.Body>
-                            <Card.Title>Restaurant Name</Card.Title>
-                            <Card.Subtitle>City, State</Card.Subtitle>
-                            <Card.Text>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus magnam repellendus saepe.
-                            </Card.Text>
-                            <Button className="cards-button">Reserve Now</Button>
-                        </Card.Body>
-                    </Card>
-                    <Card className="restaurant-cards">
-                        <Card.Img variant="top" className="restaurant-cards-img" src={dummy_image} />
-                        <Card.Body>
-                            <Card.Title>Restaurant Name</Card.Title>
-                            <Card.Subtitle>City, State</Card.Subtitle>
-                            <Card.Text>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus magnam repellendus saepe.
-                            </Card.Text>
-                            <Button className="cards-button">Reserve Now</Button>
-                        </Card.Body>
-                    </Card>
-                    <Card className="restaurant-cards">
-                        <Card.Img variant="top" className="restaurant-cards-img" src={dummy_image} />
-                        <Card.Body>
-                            <Card.Title>Restaurant Name</Card.Title>
-                            <Card.Subtitle>City, State</Card.Subtitle>
-                            <Card.Text>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus magnam repellendus saepe.
-                            </Card.Text>
-                            <Button className="cards-button">Reserve Now</Button>
-                        </Card.Body>
-                    </Card>
-                </CardGroup>
-            </Container>
-            <ShowMore />
+            {Array.from({ length: 2 }).map((_) => (
+                <HomeSuggestions />
+            ))}
 
             <Footer/>
         </>
