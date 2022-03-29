@@ -33,17 +33,17 @@ const SearchPage = () => {
                             <Card.Img variant="top" src={dummy_image}  />
                         </Col>
                         <Col md={8}>
-                            <Card.Body>
-                                <Card.Title>Restaurant Name</Card.Title>
-                                <Card.Subtitle>City, State</Card.Subtitle>
-                                <Card.Text>
+                            <Card.Body className="card-body-search">
+                                <Card.Title className="card-title-search">Restaurant Name</Card.Title>
+                                <Card.Subtitle className="card-subtitle-search">City, State</Card.Subtitle>
+                                <Card.Text className="card-text-icons">
                                     <MDBIcon fas icon="star" />
                                     <MDBIcon fas icon="star" />
                                     <MDBIcon fas icon="star" />
                                     <MDBIcon fas icon="star" />
                                     <MDBIcon far icon="star" />
                                 </Card.Text>
-                                <Card.Text>
+                                <Card.Text className="card-text-search">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium blanditiis doloremque eaque enim eos eveniet fugiat illum incidunt iusto, maiores molestiae nulla odit sunt suscipit tempora temporibus totam ullam unde veniam vero! Accusamus architecto eveniet, ipsam laboriosam molestias necessitatibus odit perferendis quod rem veritatis. Ea?
                                 </Card.Text>
                                 <Card.Text>

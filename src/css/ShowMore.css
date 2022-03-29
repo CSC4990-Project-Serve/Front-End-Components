@@ -3,9 +3,10 @@
 .show-more {
     overflow: hidden;
     text-align: center;
-    font-size: .85rem;
+    font-size: 0.85em;
     font-family: 'Open Sans', sans-serif;
 }
+
 .show-more:last-of-type {
     margin-bottom: 4rem;
 }
@@ -22,7 +23,6 @@
     right: 0.5rem;
     margin-left: -50%;
 }
-
 .show-more:after {
     left: 0.5rem;
     margin-right: -50%;
@@ -32,7 +32,6 @@
 button {
     background-color: transparent;
     color: #EFEFF1;
-    font-weight: 500;
     display: inline-block;
     vertical-align: middle;
     text-align: center;
@@ -47,11 +46,11 @@ button span {
     padding-left: 0.5rem;
 }
 button:hover {
-    background-color: #464649;
+    background-color: #3A3A3D;
 }
 
 button:focus {
-    background-color: #464649;
+    background-color: #3A3A3D;
     box-shadow: none;
     border: none;
 }
