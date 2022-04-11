@@ -1,5 +1,4 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
+import {Link} from "react-router-dom";
 import {Carousel, Container} from "react-bootstrap";
 import {MDBIcon} from "mdb-react-ui-kit";
 import HomeSuggestions from "./HomeSuggestions";
@@ -16,12 +15,6 @@ import carousel05 from '../imgs/carousel-eating.jpg';
 
 const HomePage = () => {
 
-    let navigate = useNavigate();
-    const routeChange = () => {
-        let path = "/search";
-        navigate(path);
-    }
-
     return (
         <>
             <NavigationBar />
@@ -31,41 +24,36 @@ const HomePage = () => {
                 <Carousel>
                     <Carousel.Item interval={5000}>
                         <img
-                            className="d-block w-100"
+                            className="carousel-img-home"
                             src={carousel02}
-                            height="650"
                             alt="Overhead of Restaurant"
                         />
                     </Carousel.Item>
                     <Carousel.Item interval={5000}>
                         <img
-                            className="d-block w-100"
+                            className="carousel-img-home"
                             src={carousel02}
-                            height="650"
                             alt="Two people dining outside."
                         />
                     </Carousel.Item>
                     <Carousel.Item interval={5000}>
                         <img
-                            className="d-block w-100"
+                            className="carousel-img-home"
                             src={carousel02}
-                            height="650"
                             alt="Indoor Dining"
                         />
                     </Carousel.Item>
                     <Carousel.Item interval={5000}>
                         <img
-                            className="d-block w-100"
+                            className="carousel-img-home"
                             src={carousel02}
-                            height="650"
                             alt="Food from a Restaurant"
                         />
                     </Carousel.Item>
                     <Carousel.Item interval={5000}>
                         <img
-                            className="d-block w-100"
+                            className="carousel-img-home"
                             src={carousel02}
-                            height="650"
                             alt="Woman eating food"
                         />
                     </Carousel.Item>
@@ -75,9 +63,11 @@ const HomePage = () => {
                 <div className="carousel-search-section">
                     <div className="carousel-header">Find a meal for every occasion.</div>
                     <input type="search" className="search-bar-carousel" placeholder="Location, Restaurant, or Cuisine"/>
-                    <button type="button" className="search-icon-carousel" onClick={routeChange}>
-                        <MDBIcon fas icon="search" />
-                    </button>
+                    <Link to="/search" >
+                        <button type="button" className="search-icon-carousel">
+                            <MDBIcon fas icon="search" />
+                        </button>
+                    </Link>
                 </div>
             </Container>
 
