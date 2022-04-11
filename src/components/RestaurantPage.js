@@ -1,16 +1,13 @@
-import {Link} from "react-router-dom";
 import {Button, Carousel, Col, Container, Form, Row} from "react-bootstrap";
 import {MDBIcon} from "mdb-react-ui-kit";
-import HomeSuggestions from "./HomeSuggestions";
 import NavigationBar from "./NavigationBar";
 import Footer from "./Footer";
-import HorizontalLine from "./HorizontalLine";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import '../css/RestaurantPage.css';
 import carousel_img from '../imgs/carousel-overhead.jpg';
 
 
-const SearchPage = () => {
+const RestaurantPage = () => {
 
     return (
         <>
@@ -140,4 +137,4 @@ const SearchPage = () => {
     )
 };
 
-export default SearchPage;
+export default RestaurantPage;
