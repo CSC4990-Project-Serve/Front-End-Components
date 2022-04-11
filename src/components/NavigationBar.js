@@ -27,11 +27,11 @@ const NavigationBar = () => {
                             navbarScroll
                         >
                             <NavDropdown title="More" id="collapsible-nav-dropdown"  className="ms-auto">
-                                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                                <NavDropdown.Item href="/">Home</NavDropdown.Item>
+                                <NavDropdown.Item href="/search">Search</NavDropdown.Item>
+
                                 <NavDropdown.Divider />
-                                <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+                                <NavDropdown.Item href="/admin">Administrator Tools</NavDropdown.Item>
                             </NavDropdown>
                             <Nav.Item className="nav-button">
                                 <Button variant="outline-success">Sign in</Button>
